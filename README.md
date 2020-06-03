@@ -1,5 +1,7 @@
 ## Historian-js
 
+![Header image](/docs/old-man.jpg)
+
 ### Installation
 
 ```
