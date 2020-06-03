@@ -1,3 +1,4 @@
 import { CommandHistory } from "./historian/CommandHistory";
+import { ICommand } from "./historian/Command";
 
-export default CommandHistory;
+export { CommandHistory, ICommand };
