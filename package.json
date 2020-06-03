@@ -18,6 +18,7 @@
     "build": "tsc",
     "test": "jest",
     "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
     "prepublishOnly": "npm test"
   },
   "keywords": [
