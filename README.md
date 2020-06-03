@@ -1,4 +1,4 @@
-## History-js
+## Historian-js
 
 ### Installation
 
