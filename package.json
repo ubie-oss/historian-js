@@ -1,0 +1,32 @@
+{
+  "name": "historian-js",
+  "version": "0.0.1",
+  "description": "History manager with undo and redo capabilities",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "history",
+    "undo",
+    "redo",
+    "command",
+    "command pattern",
+    "log"
+  ],
+  "author": "souppower",
+  "license": "ISC"
+}

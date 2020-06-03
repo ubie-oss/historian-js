@@ -1,0 +1,47 @@
+@startuml
+
+package GUI {
+  object UI {
+    void forward()
+    void back()
+  }
+}
+
+package CommandHistory {
+    class ConcreteCommandFactory {
+        Command create()
+    }
+
+    interface CommandFactory {
+        Command create()
+    }
+
+    class ConcreteCommand {
+        string name
+        void execute()
+        void cancel()
+    }
+
+    interface Command {
+        string name
+        void execute()
+        void cancel()
+    }
+
+    class History {
+      Command[] commands
+      void add(Command)
+      void undo()
+      void redo()
+      void clear()
+    }
+}
+
+CommandFactory <|-- ConcreteCommandFactory
+Command -- CommandFactory
+Command <|-- ConcreteCommand
+History o. "*" Command
+
+History -- GUI
+
+@enduml
