@@ -8,6 +8,6 @@
 npm install historian-js
 ```
 
-## Design
+### Design
 
 ![Diagram](/docs/history.png)
