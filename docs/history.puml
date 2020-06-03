@@ -7,7 +7,7 @@ package GUI {
   }
 }
 
-package CommandHistory {
+package Hisotrian {
     class ConcreteCommandFactory {
         Command create()
     }
@@ -28,7 +28,7 @@ package CommandHistory {
         void cancel()
     }
 
-    class History {
+    class CommandHistory {
       Command[] commands
       void add(Command)
       void undo()
@@ -40,8 +40,8 @@ package CommandHistory {
 CommandFactory <|-- ConcreteCommandFactory
 Command -- CommandFactory
 Command <|-- ConcreteCommand
-History o. "*" Command
+CommandHistory o. "*" Command
 
-History -- GUI
+CommandHistory -- GUI
 
 @enduml
