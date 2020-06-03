@@ -1,4 +1,4 @@
-import { CommandHistory } from "./historian/CommandHistory";
+import { CommandHistory, ICommandHistory } from "./historian/CommandHistory";
 import { ICommand } from "./historian/Command";
 
-export { CommandHistory, ICommand };
+export { CommandHistory, ICommandHistory, ICommand };
